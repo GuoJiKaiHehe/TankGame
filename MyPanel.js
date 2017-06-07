@@ -323,7 +323,7 @@ MyPanel.keyPressed=function(){
           event.keyCode值為37﹐38﹐39﹐40對應按下的方向鍵分別是 左﹐上﹐右﹐下 
      */
     //32
-    if(e.keyCode==32){  //发射子弹，空格；
+    if(e.keyCode==32 || e.keyCode==74){  //发射子弹，空格；
       
         hero.bullets.push(new Bullet( hero.x,hero.y,hero.direct ,_this));
     }

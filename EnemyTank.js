@@ -9,7 +9,7 @@ function EnemyTank(x , y , direct,type,mp){
     this.color="orange";
     var count=0;
     var _this=this;
-     var randInc=Math.random().toFixed(1);
+    /* var randInc=Math.random().toFixed(1);
      if(randInc<0.2){
         randInc=0.2;
      }else if(randInc<0.4){
@@ -17,14 +17,14 @@ function EnemyTank(x , y , direct,type,mp){
      }else if(randInc<0.8){
           randInc=0.8;
      }
-     randInc=randInc*100;
+     randInc=randInc*100;*/
     this.timer=setInterval(function(){
         //开始线程；
         // 50-100
        
 
 
-      count+=randInc;   
+      count+=50   
         switch(_this.direct){
             case 1:
              
