@@ -114,9 +114,9 @@ MyPanel.drawBoom=function(){
 }
 MyPanel.start=function(){
     //开始 画板线程；
-    this.timer=setTimeout(function(){
-
-    }, 50);
+    this.timer=setInterval(function(){
+        MyPanel.paint();
+    },50)
 }
 
 
@@ -133,6 +133,7 @@ MyPanel.init=function(){
     this.paint();
     this.map.focus();
     this.keyPressed();
+    this.start();
 }
 
 MyPanel.paint=function() {

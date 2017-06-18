@@ -56,7 +56,7 @@ function Bullet(x,y,dir,mp){
                 break;
         }
       //  console.log("子弹的x："+this.x+";子弹的y："+this.y);
-       this.mp.paint();
+  
      
     }
  
@@ -73,7 +73,7 @@ this.timer=setInterval(function(){
             console.log("子弹死亡");
             _this.isLive=false; //死亡了；
             clearInterval(_this.timer); //清除线程；
-            _this.mp.paint();
+           
         }else{
            _this.move(); 
         }

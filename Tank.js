@@ -26,7 +26,7 @@ function Tank(x , y , direct,type,speed){
         this.y -= this.speed;
         this.direct=1;
 
-        MyPanel.paint();
+    
     }
      /**
      *   坦克向下
@@ -36,7 +36,7 @@ function Tank(x , y , direct,type,speed){
     this.moveDown=function(){
         this.y+=this.speed;
         this.direct=2;
-         MyPanel.paint();
+        
       //  flash_map(this);
     }
 
@@ -47,7 +47,7 @@ function Tank(x , y , direct,type,speed){
     this.moveLeft=function(){
         this.x-=this.speed;
         this.direct=3;
-         MyPanel.paint();
+       
     }
 
      /**
@@ -57,12 +57,11 @@ function Tank(x , y , direct,type,speed){
     this.moveRight=function(){
     this.x+=this.speed;
      this.direct= 4;
-     MyPanel.paint();
+    
     }
 
     this.move=function(){
         //坦克移动；
         
     }
-
 }
